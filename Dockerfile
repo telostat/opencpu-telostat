@@ -1,5 +1,11 @@
-## We are using official python image:
+## Using the official ubuntu image:
 FROM ubuntu:14.04
+
+## Preamble:
+MAINTAINER Vehbi Sinan Tunalioglu <vst@vsthost.com>
+
+## Define versions required:
+ENV VERSION 0.0.1
 
 ## Prepare apt-get:
 RUN echo "debconf debconf/frontend select Noninteractive" | debconf-set-selections && \
@@ -16,10 +22,9 @@ RUN echo "debconf debconf/frontend select Noninteractive" | debconf-set-selectio
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# Apache ports
+# Expose required ports:
 EXPOSE 80
-EXPOSE 443
 EXPOSE 8004
 
-# Set the endpoint:
+# Set the command:
 CMD service opencpu restart && tail -F /var/log/opencpu/apache_access.log
