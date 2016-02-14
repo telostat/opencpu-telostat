@@ -1,0 +1,5 @@
+VERS: 2016-02-14 ------- release/0.0.1
+
+    * 2016-02-14 9b18bbd [release] Version bumped to 0.0.1 (vst@vsthost.com)
+    * 2016-02-14 756ebbb [chore] Insignificant Dockerfile changes (vst@vsthost.com)
+    * 2016-02-14 26c55b4 Initial commit (vst@vsthost.com)
