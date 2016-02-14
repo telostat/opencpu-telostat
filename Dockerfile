@@ -5,7 +5,7 @@ FROM ubuntu:14.04
 MAINTAINER Vehbi Sinan Tunalioglu <vst@vsthost.com>
 
 ## Define versions required:
-ENV VERSION 0.0.1-SNAPSHOT
+ENV VERSION 0.0.1
 
 ## Prepare apt-get:
 RUN echo "debconf debconf/frontend select Noninteractive" | debconf-set-selections && \
