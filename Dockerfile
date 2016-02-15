@@ -18,8 +18,10 @@ RUN echo "debconf debconf/frontend select Noninteractive" | debconf-set-selectio
             nano \
             unzip \
             pandoc \
+            wget \
             opencpu \
             littler && \
+    wget -O /tmp/pandoc.deb https://github.com/jgm/pandoc/releases/download/1.16.0.2/pandoc-1.16.0.2-1-amd64.deb && dpkg -i /tmp/pandoc.deb && rm /tmp/pandoc.deb && \
     apt-get clean autoclean && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
