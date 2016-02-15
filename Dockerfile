@@ -17,10 +17,18 @@ RUN echo "debconf debconf/frontend select Noninteractive" | debconf-set-selectio
     apt-get install -qy \
             nano \
             unzip \
-            opencpu && \
+            pandoc \
+            opencpu \
+            littler && \
     apt-get clean autoclean && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+## Copy stuff:
+COPY opt/ /opt/telostat
+
+## Run setup script:
+RUN /opt/telostat/bin/setup.sh
 
 # Expose required ports:
 EXPOSE 80
