@@ -5,7 +5,7 @@ FROM ubuntu:14.04
 MAINTAINER Vehbi Sinan Tunalioglu <vst@vsthost.com>
 
 ## Define versions required:
-ENV VERSION 0.0.1
+ENV VERSION 0.0.2
 
 ## Prepare apt-get:
 RUN echo "debconf debconf/frontend select Noninteractive" | debconf-set-selections && \
@@ -17,10 +17,20 @@ RUN echo "debconf debconf/frontend select Noninteractive" | debconf-set-selectio
     apt-get install -qy \
             nano \
             unzip \
-            opencpu && \
+            pandoc \
+            wget \
+            opencpu \
+            littler && \
+    wget -O /tmp/pandoc.deb https://github.com/jgm/pandoc/releases/download/1.16.0.2/pandoc-1.16.0.2-1-amd64.deb && dpkg -i /tmp/pandoc.deb && rm /tmp/pandoc.deb && \
     apt-get clean autoclean && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+## Copy stuff:
+COPY opt/ /opt/telostat
+
+## Run setup script:
+RUN /opt/telostat/bin/setup.sh
 
 # Expose required ports:
 EXPOSE 80
