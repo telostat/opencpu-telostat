@@ -1,5 +1,14 @@
-VERS: 2016-02-14 ------- release/0.0.1
+VERS: 2016-02-16 ------- release/0.0.2
 
+    * 2016-02-16 aa6dfc5 [release] Version bumped to 0.0.2 (vst@vsthost.com)
+    * 2016-02-16 45112d9 [feature] Added some required R libraries (vst@vsthost.com)
+    * 2016-02-15 da4a60f [chore] Using a more recent version of pandoc instead of 1.12.etc. (vst@vsthost.com)
+    * 2016-02-15 481d828 [chore] Added Rprofile, setup and install scripts, default index page (vst@vsthost.com)
+    * 2016-02-14 a6e10a3 [chore] Development version bumped to 0.0.2-SNAPSHOT (vst@vsthost.com)
+
+VERS: 2016-02-14 10c6583 release/0.0.1 (vst@vsthost.com)
+
+    * 2016-02-14 7937370 [release] Change log updated (vst@vsthost.com)
     * 2016-02-14 9b18bbd [release] Version bumped to 0.0.1 (vst@vsthost.com)
     * 2016-02-14 756ebbb [chore] Insignificant Dockerfile changes (vst@vsthost.com)
     * 2016-02-14 26c55b4 Initial commit (vst@vsthost.com)
