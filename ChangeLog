@@ -1,5 +1,12 @@
-VERS: 2016-02-16 ------- release/0.0.2
+VERS: 2016-07-04 ------- release/0.0.3
 
+    * 2016-07-04 84ffce8 [release] Version bumped to 0.0.3 (vst@vsthost.com)
+    * 2016-07-04 f9d2f73 [chore] Upgraded to Ubuntu 16.04 and OpenCPU 1.6 (vst@vsthost.com)
+    * 2016-02-16 5b238f1 [chore] Development version bumped to 0.0.3-SNAPSHOT (vst@vsthost.com)
+
+VERS: 2016-02-16 b902672 release/0.0.2 (vst@vsthost.com)
+
+    * 2016-02-16 327a21e [release] Change log updated (vst@vsthost.com)
     * 2016-02-16 aa6dfc5 [release] Version bumped to 0.0.2 (vst@vsthost.com)
     * 2016-02-16 45112d9 [feature] Added some required R libraries (vst@vsthost.com)
     * 2016-02-15 da4a60f [chore] Using a more recent version of pandoc instead of 1.12.etc. (vst@vsthost.com)
