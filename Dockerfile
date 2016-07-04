@@ -5,7 +5,7 @@ FROM ubuntu:16.04
 MAINTAINER Vehbi Sinan Tunalioglu <vst@vsthost.com>
 
 ## Define versions required:
-ENV VERSION 0.0.3-SNAPSHOT
+ENV VERSION 0.0.3
 ENV VERSION_OPENCPU 1.6
 
 ## Prepare apt-get:
